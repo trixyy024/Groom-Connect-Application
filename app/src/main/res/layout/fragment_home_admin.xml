@@ -1,0 +1,225 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/mintgreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- User Info and Profile Picture -->
+        <RelativeLayout
+            android:id="@+id/userInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="16dp"
+            android:background="@color/white"
+            android:padding="16dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:id="@+id/welcomeBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WELCOME BACK"
+                android:textSize="14sp"
+                android:textColor="#757575"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/welcomeBack"
+                android:text="User Name"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"/>
+
+            <ImageView
+                android:id="@+id/profilePicture"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:clickable="true"
+                android:padding="1dp"
+                android:contentDescription="profile"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/profile"/>
+        </RelativeLayout>
+
+        <!-- Sales Metrics Card -->
+        <RelativeLayout
+            android:id="@+id/salesMetrics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userInfo"
+            android:background="@color/white"
+            android:padding="16dp"
+            android:focusable="true"
+            android:elevation="8dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Total Sales -->
+            <TextView
+                android:id="@+id/totalSalesLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Sales"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/totalSalesAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/totalSalesLabel"
+                android:text="0"
+                android:textSize="24sp"
+                android:textColor="#000"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Average Sales -->
+            <TextView
+                android:id="@+id/averageSalesLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/totalSalesAmount"
+                android:text="Average Sales"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/averageSalesAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/averageSalesLabel"
+                android:text="0"
+                android:textSize="24sp"
+                android:textColor="#000"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Growth Percentage -->
+            <TextView
+                android:id="@+id/growthPercentageLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/averageSalesAmount"
+                android:text="Growth Percentage"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/growthPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/growthPercentageLabel"
+                android:text="%"
+                android:textSize="24sp"
+                android:textColor="#4CAF50"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Daily Sales -->
+            <TextView
+                android:id="@+id/dailySalesLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/growthPercentage"
+                android:text="Daily Sales"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/dailySalesAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dailySalesLabel"
+                android:text="0"
+                android:textSize="24sp"
+                android:textColor="#000"/>
+        </RelativeLayout>
+
+        <!-- Product & Services -->
+        <!-- Product & Services -->
+        <RelativeLayout
+            android:id="@+id/productServicesCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/salesMetrics"
+            android:background="@color/white"
+            android:padding="16dp"
+            android:elevation="8dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/prodAndservices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product and Services"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/topProducts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/prodAndservices"
+                android:layout_marginTop="8dp"
+                android:text="Top 3 Products"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/productList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/topProducts"
+                android:layout_marginTop="8dp"
+                android:text="1. Product A\n2. Product B\n3. Product C"
+                android:textSize="14sp"
+                android:textColor="#000" />
+
+        </RelativeLayout>
+
+
+        <!-- Appointment Card -->
+        <RelativeLayout
+            android:id="@+id/appointmentCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productServicesCard"
+            android:background="@color/white"
+            android:padding="16dp"
+            android:elevation="8dp">
+
+            <TextView
+                android:id="@+id/appointmentTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Appointments"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/appointmentDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No more appointments"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_below="@id/appointmentTitle"
+                android:layout_marginTop="8dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

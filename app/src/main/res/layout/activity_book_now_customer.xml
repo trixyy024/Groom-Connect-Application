@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".customer.Book_now"
+    android:background="@color/mintgreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Book Now"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="65dp"
+                android:layout_marginBottom="1dp"
+                android:hint="Customer Name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" app:boxBackgroundColor="@android:color/transparent"
+                app:endIconMode="clear_text"
+                app:counterMaxLength="20"
+                app:helperTextTextColor="@color/green"
+                app:boxStrokeColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/customerNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:padding="1dp"
+                android:hint=""
+                android:backgroundTint="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Pet Name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:endIconMode="clear_text"
+            app:counterMaxLength="20"
+            app:helperTextTextColor="@color/green"
+            app:boxStrokeColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/petNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:hint=""
+            android:backgroundTint="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Pet Breed"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundColor="@android:color/transparent"
+                app:endIconMode="clear_text"
+                app:counterMaxLength="20"
+                app:helperTextTextColor="@color/green"
+                app:boxStrokeColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/petBreedEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:padding="8dp"
+                    android:hint=""
+                    android:backgroundTint="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Address"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundColor="@android:color/transparent"
+                app:endIconMode="clear_text"
+                app:counterMaxLength="20"
+                app:helperTextTextColor="@color/green"
+                app:boxStrokeColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/addressEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:padding="8dp"
+                    android:hint=""
+                    android:backgroundTint="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Service Type"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundColor="@android:color/transparent"
+                app:boxStrokeColor="@color/black">
+
+                <Spinner
+                    android:id="@+id/typesofServices"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:entries="@array/types_of_services"
+                    android:padding="8dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:spinnerMode="dropdown"
+                    android:background="@drawable/spinner_backgroun" /> <!-- Custom background -->
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Service Type"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundColor="@android:color/transparent"
+                app:boxStrokeColor="@color/black">
+
+                <Spinner
+                    android:id="@+id/product_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:entries="@array/product_options"
+                    android:padding="8dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:spinnerMode="dropdown"
+                    android:background="@drawable/spinner_backgroun" /> <!-- Custom background -->
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <EditText
+                android:id="@+id/datePickerEditText"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Date"
+                android:padding="8dp"
+                android:focusable="false"
+                android:clickable="true"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/green"/>
+
+            <EditText
+                android:id="@+id/timePickerEditText"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Time"
+                android:padding="8dp"
+                android:focusable="false"
+                android:clickable="true"
+                android:backgroundTint="@color/green"/>
+
+            <LinearLayout
+                android:id="@+id/drawable_container"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="1dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Bill"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="100dp"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/gcashlogo"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:contentDescription="gcash_description"
+                    android:padding="4dp"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="CASH"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:contentDescription="cash"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <Button
+                    android:id="@+id/cancelButton"
+                    android:layout_width="100dp"
+                    android:layout_height="58dp"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="@color/green"
+                    android:padding="5dp"
+                    android:text="@string/cancel"
+                    android:textSize="18sp"
+                    app:cornerRadius="10dp" />
+
+                <Button
+                    android:id="@+id/submitButton"
+                    android:layout_width="100dp"
+                    android:layout_height="58dp"
+                    android:backgroundTint="@color/green"
+                    android:padding="5dp"
+                    android:text="Submit"
+                    android:textSize="18sp"
+                    app:cornerRadius="10dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

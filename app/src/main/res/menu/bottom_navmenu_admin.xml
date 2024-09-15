@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/home"
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        />
+    <item
+        android:title="Appointments"
+        android:id="@+id/Appointments"
+        android:icon="@drawable/appointment"
+        />
+    <item
+        android:title="Sales Report"
+        android:id="@+id/SalesReport"
+        android:icon="@drawable/sales"
+        />
+    <item
+        android:title="Products and Services"
+        android:id="@+id/ProdAndServ"
+        android:icon="@drawable/service"/>
+
+</menu>

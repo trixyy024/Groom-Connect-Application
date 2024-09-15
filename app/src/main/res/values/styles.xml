@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">@color/mintgreen</item>
+        <item name="colorPrimaryDark">@color/green</item>
+        <item name="colorAccent">@color/offwhite</item>
+    </style>
+
+    <style name="Toolbar.TitleText"  parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">10sp</item> <!-- Change to your desired size -->
+        <item name="android:textStyle">bold</item> <!-- Change to your desired style (normal, bold, italic) -->
+        <item name="android:fontFamily">@font/</item> <!-- Use a custom font if needed -->
+        <item name="android:textColor">@color/black</item> <!-- Change to your desired text color -->
+    </style>
+
+
+
+    <!-- Base application theme -->
+
+
+    <!-- Define circular shape for the image view -->
+    <style name="CircleImageView" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+
+    <!-- Custom DatePickerDialog style -->
+    <style name="CustomDatePickerDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:datePickerDialogTheme">@style/CustomDatePicker</item>
+    </style>
+
+    <!-- Custom TimePickerDialog style -->
+    <style name="CustomTimePickerDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:timePickerDialogTheme">@style/CustomTimePicker</item>
+    </style>
+
+    <!-- Custom DatePicker style -->
+    <style name="CustomDatePicker" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@color/mintgreen</item>
+    </style>
+
+    <!-- Custom TimePicker style -->
+    <style name="CustomTimePicker" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@color/mintgreen</item>
+    </style>
+
+
+
+</resources>

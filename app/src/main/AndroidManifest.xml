@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.capstone.petgroomingapplication">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PetGroomingApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".forgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".conTry"
+            android:exported="false" />
+        <activity
+            android:name=".customer.PlaceOrder"
+            android:exported="false" />
+        <activity
+            android:name=".customer.AddToCart"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AddProducts"
+            android:exported="false" />
+        <activity
+            android:name=".admin.DetailsService"
+            android:exported="false" />
+        <activity
+            android:name=".admin.DetailsProduct"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AddService"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY" />
+
+        <activity
+            android:name=".registration.Registration"
+            android:exported="false" />
+        <activity
+            android:name=".registration.RegisterPersonalInformation"
+            android:exported="false" />
+        <activity
+            android:name=".registration.RegisteringAccount"
+            android:exported="false" />
+        <activity
+            android:name=".registration.OTP_Verification"
+            android:exported="false" />
+        <activity
+            android:name=".groomer.Groomer_Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".customer.Book_now"
+            android:exported="false" />
+        <activity
+            android:name=".admin.Dashboard"
+            android:exported="true" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".customer.Dashboard"
+            android:exported="false" />
+    </application>
+
+</manifest>

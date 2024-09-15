@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/offwhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="100"
+    android:backgroundTint="@color/mintgreen"
+    tools:context=".Login">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="105dp"
+        android:layout_marginBottom="-2dp"
+        android:src="@drawable/gclogo" />
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="10dp"
+        android:text="Welcome back!"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_weight="5" />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/countryCodePickLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            app:ccp_showFlag="false"
+
+            android:background="@drawable/edit_text_rounded_corner"
+            app:ccp_showNameCode="false"
+            android:elevation="5dp"
+            app:ccp_defaultNameCode="PH" />
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:hint="Mobile number"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:elevation="5dp"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/passwordLogin"
+        android:layout_width="340dp"
+        android:layout_height="48dp"
+        android:layout_margin="10dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:background="@drawable/edit_text_rounded_corner"
+        android:elevation="5dp"/>
+    <TextView
+    android:id="@+id/forgotPassword"
+    android:layout_width="340dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="2dp"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="14dp"
+    android:text="Forgot Password?"
+    android:textColor="@color/green" />
+
+    <Button
+        android:id="@+id/continue_MobileNo"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/green"
+        android:text="Login"
+        android:textColor="@color/white" />
+
+    <ProgressBar
+        android:id="@+id/progressBarLogin"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"/>
+
+        <TextView
+            android:id="@+id/btnRegister"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:text=" Register"
+            android:clickable="true"
+            android:textColor="@color/green"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>
