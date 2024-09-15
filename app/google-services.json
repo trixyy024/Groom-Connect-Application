@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "727157982893",
+    "project_id": "petgroomingapp-back-end",
+    "storage_bucket": "petgroomingapp-back-end.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727157982893:android:a490c38030d95dc23ba824",
+        "android_client_info": {
+          "package_name": "com.capstone.petgroomingapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPkq3MzJN3gLDsUeh-DrQiuo2_cJVN7oI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727157982893:android:10926f794001f4343ba824",
+        "android_client_info": {
+          "package_name": "com.project.petgroomingapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPkq3MzJN3gLDsUeh-DrQiuo2_cJVN7oI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
